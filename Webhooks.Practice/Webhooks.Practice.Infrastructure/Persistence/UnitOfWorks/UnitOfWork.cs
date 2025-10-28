@@ -45,11 +45,6 @@ namespace Webhooks.Practice.Infrastructure.Persistence.UnitOfWorks
             {
                 await Rollback();
             }
-            finally
-            {
-                transaction.Dispose();
-                transaction = null;
-            }
         }
 
 

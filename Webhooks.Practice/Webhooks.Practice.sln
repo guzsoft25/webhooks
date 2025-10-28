@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.Application.Dtos", "Webhooks.Practice.Application.Dtos\Webhooks.Practice.Application.Dtos.csproj", "{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{C59D59EE-E77A-4A35-8C9A-E9838D1C89B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.WebApi", "Webhooks.Practice.WebApi\Webhooks.Practice.WebApi.csproj", "{F67DA3F9-5D97-4FBF-8EF8-DDF0063EEC6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67DA3F9-5D97-4FBF-8EF8-DDF0063EEC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67DA3F9-5D97-4FBF-8EF8-DDF0063EEC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67DA3F9-5D97-4FBF-8EF8-DDF0063EEC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67DA3F9-5D97-4FBF-8EF8-DDF0063EEC6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +61,8 @@ Global
 		{39DEF9E3-984C-4C60-9164-863D77BF157E} = {AD270C61-C874-4E29-9831-C58A73905BB8}
 		{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3} = {BA734B4F-B8A4-43FE-96A9-9322FC67FE97}
 		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88} = {BA734B4F-B8A4-43FE-96A9-9322FC67FE97}
+		{C59D59EE-E77A-4A35-8C9A-E9838D1C89B6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F67DA3F9-5D97-4FBF-8EF8-DDF0063EEC6A} = {C59D59EE-E77A-4A35-8C9A-E9838D1C89B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3297B8C-A33F-464E-A942-7D2EDAF65EC4}

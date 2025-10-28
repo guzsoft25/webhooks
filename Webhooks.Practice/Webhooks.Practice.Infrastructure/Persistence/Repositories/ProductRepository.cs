@@ -1,5 +1,7 @@
-﻿using Webhooks.Practice.Application.Contracts;
+﻿using Microsoft.EntityFrameworkCore;
+using Webhooks.Practice.Application.Contracts;
 using Webhooks.Practice.Domain.Entities;
+using Webhooks.Practice.Infrastructure.Exceptions;
 using Webhooks.Practice.Infrastructure.Persistence.DbContexts;
 
 namespace Webhooks.Practice.Infrastructure.Persistence.Repositories
@@ -16,17 +18,25 @@ namespace Webhooks.Practice.Infrastructure.Persistence.Repositories
 
         public async Task<int> CreateProductAsync(Product product)
         {
-            throw new NotImplementedException();
+            await dbContext.AddAsync(product);
+            return product.ProductId;
         }
 
         public async Task<IQueryable<Product>> GetProductsAsync()
         {
-            throw new NotImplementedException();
+            var products = dbContext.Products.AsQueryable();
+            return products;
         }
 
         public async Task RemoveProductAsync(int productId)
         {
-            throw new NotImplementedException();
+            var product = await dbContext.Products.FirstOrDefaultAsync(x => x.ProductId == productId);
+
+            if(product == null) {
+                throw new InfrastructureException($"unit of Id {productId} does not exist");
+            }
+
+            dbContext.Products.Remove(product);
         }
     }
 }

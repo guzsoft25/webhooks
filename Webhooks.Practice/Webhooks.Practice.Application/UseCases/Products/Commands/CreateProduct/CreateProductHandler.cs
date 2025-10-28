@@ -8,9 +8,9 @@ namespace Webhooks.Practice.Application.UseCases.Products.Commands.CreateProduct
     public class CreateProductHandler : IRequestHandler<CreateProductCommand, int>
     {
         private readonly IUnitOfWork unitOfWork;
-        private readonly ILogger logger;
+        private readonly ILogger<CreateProductHandler> logger;
 
-        public CreateProductHandler(IUnitOfWork unitOfWork, ILogger logger)
+        public CreateProductHandler(IUnitOfWork unitOfWork, ILogger<CreateProductHandler> logger)
         {
             this.unitOfWork = unitOfWork;
             this.logger = logger;
@@ -26,7 +26,9 @@ namespace Webhooks.Practice.Application.UseCases.Products.Commands.CreateProduct
             Product product 
                 = new Product(request.Name, request.Description, request.Price, request.Image);
 
+            unitOfWork.Begin();
             int productId = await unitOfWork.ProductRepository.CreateProductAsync(product);
+            await unitOfWork.Commit();
             return productId;
         }
     }
