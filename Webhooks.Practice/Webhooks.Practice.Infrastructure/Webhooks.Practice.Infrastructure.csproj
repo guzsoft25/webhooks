@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Webhooks.Practice.Application\Webhooks.Practice.Application.csproj" />
+    <ProjectReference Include="..\Webhooks.Practice.Domain\Webhooks.Practice.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

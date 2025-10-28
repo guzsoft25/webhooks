@@ -6,7 +6,7 @@ namespace Webhooks.Practice.Application.UnitOfWorks
     {
         void Begin();
         Task Commit();
-        void RollBack();
-        public IProductRepository ProductRepository  { get; set; }
+        Task Rollback();
+        public IProductRepository ProductRepository  { get; }
     }
 }
