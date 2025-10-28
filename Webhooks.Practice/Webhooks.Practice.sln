@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{60FCD024-8318-4E6D-A674-08987A98F6E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{BA734B4F-B8A4-43FE-96A9-9322FC67FE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{AD270C61-C874-4E29-9831-C58A73905BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.Domain", "Webhooks.Practice.Domain\Webhooks.Practice.Domain.csproj", "{A72BE363-C6A9-46D6-A204-BC151674CB96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.Infrastructure", "Webhooks.Practice.Infrastructure\Webhooks.Practice.Infrastructure.csproj", "{39DEF9E3-984C-4C60-9164-863D77BF157E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.Application", "Webhooks.Practice.Application\Webhooks.Practice.Application.csproj", "{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webhooks.Practice.Application.Dtos", "Webhooks.Practice.Application.Dtos\Webhooks.Practice.Application.Dtos.csproj", "{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72BE363-C6A9-46D6-A204-BC151674CB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72BE363-C6A9-46D6-A204-BC151674CB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72BE363-C6A9-46D6-A204-BC151674CB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72BE363-C6A9-46D6-A204-BC151674CB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DEF9E3-984C-4C60-9164-863D77BF157E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DEF9E3-984C-4C60-9164-863D77BF157E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DEF9E3-984C-4C60-9164-863D77BF157E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DEF9E3-984C-4C60-9164-863D77BF157E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60FCD024-8318-4E6D-A674-08987A98F6E2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BA734B4F-B8A4-43FE-96A9-9322FC67FE97} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AD270C61-C874-4E29-9831-C58A73905BB8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A72BE363-C6A9-46D6-A204-BC151674CB96} = {60FCD024-8318-4E6D-A674-08987A98F6E2}
+		{39DEF9E3-984C-4C60-9164-863D77BF157E} = {AD270C61-C874-4E29-9831-C58A73905BB8}
+		{B3FD6C1F-E48B-483E-96C4-D19483C9C9D3} = {BA734B4F-B8A4-43FE-96A9-9322FC67FE97}
+		{66A76A9A-0C10-43F7-A4FD-6AD47DCC2C88} = {BA734B4F-B8A4-43FE-96A9-9322FC67FE97}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3297B8C-A33F-464E-A942-7D2EDAF65EC4}
+	EndGlobalSection
+EndGlobal
